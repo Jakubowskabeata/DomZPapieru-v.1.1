@@ -1,0 +1,305 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 62.5%;
+	color: white;
+}
+
+main {
+	background-color: black;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+}
+
+.title .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	color: black;
+}
+
+.logo {
+	font-family: "League Gothic", sans-serif;
+	font-size: 2.4rem;
+	flex-shrink: 0;
+}
+
+.customLetter {
+	color: white;
+	background-color: red;
+	font-size: 2.4rem;
+}
+
+h2 {
+	font-size: 1.6rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+header {
+	height: 90vh;
+	position: relative;
+	background-image: url(./img/bg2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-text h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 2rem;
+	padding: 10px;
+	color: #ddd;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header i {
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2.5rem;
+}
+
+.boss {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+.boss .container-img .boss-img {
+	width: 100vw;
+	max-width: 1200px;
+}
+
+.boss .about {
+	padding: 0 0 20px 0;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.2rem;
+	padding: 40px 20px;
+	text-align: justify;
+}
+
+.boss .about h3 {
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	font-size: 1.5rem;
+}
+
+.boss .about p {
+	font-size: 1.2rem;
+}
+
+.separating-line {
+	margin: 0 auto;
+	width: 50%;
+	max-width: 1200px;
+	background-color: maroon;
+	border-color: maroon;
+	border-width: 1px;
+	border-radius: 50%;
+}
+
+.separating-line:nth-of-type(2) {
+	margin-bottom: 20px;
+}
+
+.team {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.person {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.container-img {
+	position: relative;
+	align-items: center;
+}
+
+.container-img button {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 5px 80px;
+	text-transform: uppercase;
+	background-color: maroon;
+	color: white;
+	font-weight: bolder;
+	border: transparent;
+	border-radius: 5px;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.nameCity,
+.name {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 5px 10px;
+	background-color: transparent;
+	color: white;
+	font-family: "League Gothic", sans-serif;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.name {
+	font-size: 2rem;
+}
+
+.nameCity .customLetter {
+	font-size: 3rem;
+}
+
+.person-img,
+.city-img {
+	border-radius: 50%;
+	max-width: 300px;
+	transition: 0.3s;
+}
+
+.city-img:hover~.reval,
+.container-img button:hover {
+	background-color: rgb(165, 21, 21);
+	font-size: 1.5rem;
+	border: transparent;
+}
+
+.city-img:hover {
+	box-shadow: 0 0 1em 0.5em maroon;
+}
+
+.toggler {
+	display: none;
+}
+
+footer p {
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding: 15px;
+	font-size: 1.2rem;
+}
+
+cite {
+	font-style: normal;
+}
+
+.quote {
+	text-align: center;
+	max-width: 800px;
+	margin: 30px auto;
+}
+
+.line-through {
+	display: block;
+	position: relative;
+	border-bottom: 2px solid #fff;
+	height: 15px;
+}
+
+.line-through span {
+	position: absolute;
+	display: inline-block;
+	background: black;
+	color: maroon;
+	width: 200px;
+	margin-left: -100px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.stripe-border {
+	background: linear-gradient(to bottom, maroon, maroon 25%, black 25%, black);
+	background-size: 100% 5px;
+}
+
+.stripe-border blockquote p {
+	background: black;
+	margin: 0 10px;
+	padding: 20px;
+	font-size: 1.2rem;
+	line-height: 1;
+	font-style: italic;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 80%;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 90%;
+	}
+
+	header {
+		background-image: url(./img/bg.jpg);
+	}
+
+	.logo {
+		letter-spacing: 2px;
+	}
+
+	.separating-line-person {
+		display: none;
+	}
+
+	.person {
+		flex-direction: row;
+	}
+
+	.person:nth-of-type(2n) {
+		flex-direction: row-reverse;
+	}
+
+	.person-img,
+	.city-img {
+		margin: 25px;
+	}
+}
