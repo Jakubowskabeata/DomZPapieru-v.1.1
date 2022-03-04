@@ -54,6 +54,7 @@ header {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: bottom;
+	-webkit-overflow-scrolling: touch
 }
 
 .hero-bg {
