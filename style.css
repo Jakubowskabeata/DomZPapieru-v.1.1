@@ -51,10 +51,8 @@ header {
 	height: 90vh;
 	position: relative;
 	background-image: url(./img/bg2.jpg);
-	background-attachment: fixed;
 	background-size: cover;
 	background-position: bottom;
-	-webkit-overflow-scrolling: touch
 }
 
 .hero-bg {
